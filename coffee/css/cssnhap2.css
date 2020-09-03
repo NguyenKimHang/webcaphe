@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document */
+/*HEADER*/
+html {
+	display:block;
+	}
+body {
+	margin:0;
+	display:block;
+	overflow-y: scroll;
+	}
+div.headertrangchu {
+	width:100%;
+	background-color:#000;
+	overflow:hidden;
+	padding-bottom:50px;
+	}
+
+
+
+div.wrapper {
+	width:100%;
+	padding:0;
+	margin:0;
+	}
+
+/* Image zoom on hover + Overlay colour */
+.parent {
+    width: 100%;
+    margin:0;
+    height: 300px;
+	/*left:5px;right:5px; */
+	/*border: 1px solid blue;*/
+    overflow: hidden;
+    position: relative;
+    /* float: left; */
+     display: inline-block;/*  */
+      /*cursor: pointer;Thuộc tính cursor hiển thị con trỏ chuột khi duy chuyển con trỏ vào thành phần.  */
+	 padding-bottom: 250px;
+	 /*content:200px;*/
+}
+
+.child {
+	margin:0;
+     padding-bottom:250px;
+	 height: 100%;
+    /*width: 100%;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    /*  -moz-transition: all .5s; */
+    /* -o-transition: all .5s; */
+    /* transition: all .5s; */
+}
+
+/* Several different images */
+.bg-one {
+	background-image:url(../img/icon/our_story_bg_1.jpg);
+	 width:100%;
+	}
+
+
+ div.child  > a {
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;/*thứ tụ ưu tiên*/
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2); /*-o-transform: scale(1.2);transform: scale(1.2); */
+    
+   
+    
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+   
+   /* width: 100%; height: 100%;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .parent {width: 100%; margin: 0px 0px}
+    .wrapper {padding:0 /*20px 20px*/;}
+}
+
+
+
+
+
+
+/*MENU*/
+
+/*BODY*/
+div.body {
+	width:100%;
+	float:left;
+	line-height:60px;
+	background-color:#FFF;
+	margin:0;
+	padding:0;
+	}
+/*LEFT*/
+div.left {
+	float:left;
+	width:48%;
+	margin:0.5px;
+
+	}
+div.left > ul > li {
+	list-style-type:none;
+	text-align:center;
+	padding:15px 15px;
+	
+	}
+div.left > ul {
+	padding:0;
+	}
+div.left > ul > li > a > img {
+	width: 49%;
+	}
+div.left > ul > li > a > img:hover {
+	transform:scale(1.1);
+	border:1px solid #666;
+	transition: 0.4s;
+	}
+/*RIGHT*/
+div.right {
+	
+	float:left;	
+	width:48%;
+	margin:0.5px;
+	
+	}
+div.right > ul {
+	padding:0;
+	}
+div.right > ul > li {
+	list-style-type:none;
+	text-align:center;
+	padding:15px 15px;
+	}
+div.right > ul >li > a > img {
+	width:49%;
+	}
+div.right> ul > li >a > img:hover {
+	transform:scale(1.1);
+	border:1px solid #666;
+	transition: 0.4s;
+	}
+.containertrangchu {
+    padding: 0;
+    margin: 0 auto;
+    width: 1300px;
+}
+/*FOOTER*/
+.headerme {
+	height: 60px;
+    padding: 14px 0;
+    background: #666;
+    box-sizing: initial;
+	}
+/*MENUME*/
+.headright {
+	float:right;
+    width: 450px;
+	} 
+.headleft {
+	width:40%;
+	float:left;
+	margin-left:30px
+	}
+.input-group-append {
+	/*display: flex;*/
+	float:right;
+	line-height:70px;
+	padding:0;
+	margin-right:30px;
+	margin-top: 2.6px;
+}
+.input-group-append img {
+	width:10px;
+	height:15px;
+	padding:0;
+}
+div.controls {
+	float:right;
+	line-height:70px;
+	position: relative;
+}
+
+.controls:hover input#search{
+	width: 300px;
+}
+.logoreview {
+	float:left;
+	}
+.review {
+	float:left;
+	line-height:70px;
+	font-size:24px;
+	text-transform:uppercase;
+	color:white;
+	
+	}
+
+/*menu*/
+.nutsreach {
+	padding: 1px 6px;
+    height: 22.1px;
+	}
+.footer {
+	background: #666;
+	border-top:1px solid #30F;
+	margin:0 auto;
+	width:100%;
+	color:#FFF;
+	float:left;
+    position: relative;
+    min-height: 100px;
+  	
+	}
+
+.ft-md,.ft-right,.ft-left {
+	float:left;
+	}
+.ft-left {
+	width:30%;
+	margin-left:40px;
+	}
+.ft-md {
+	float: left;
+    width: 30%;
+	margin-left:10px;
+	}
+.ft-right {
+	float: left;
+    width: 20%;
+
+	}
+h4 {
+	font-weight:bold;
+	text-transform:uppercase; /*chữ in*/
+}
+.tentiemfooter {
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#FFF;
+	}
+.lienketme {
+	list-style-type:none;
+	}
+

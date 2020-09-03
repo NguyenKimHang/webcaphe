@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*STAR IMG1*/
+.ratingss1 {
+	width:100%;
+	margin:0;
+	text-align:center;
+	}
+.ratings1 {
+  overflow: hidden;
+  vertical-align: bottom;
+  
+ /* width: auto;display: inline-block;*/
+  height: 30px;
+}
+
+.ratings1 > input {
+  opacity: 0;
+  margin-right: -100%;
+
+}
+
+ 
+.ratings1 > label {
+  position: relative;
+  float: right;
+  background:url(../img/logo/if_star_384882.png);
+  background-size: 30px 30px;
+  width:20%;
+  padding-top:2px;
+  padding-bottom:6px; 
+  color:#FFF;
+  box-sizing:border-box;
+  cursor:pointer;
+  /*display:inline-block;*/
+}
+
+ 
+
+.ratings1 > label:before { 
+  opacity: 0;
+  content: '';
+  width: 20px;
+  height: 20px;
+  padding-bottom:10px;
+  left:2px;
+  padding-right:8px;
+  background:url(../img/logo/if_89_171448.png);
+  background-size: 30px 30px;
+  transition: opacity 0.2s linear;
+  position:absolute;
+  /*display:inline-block;text-align:center;*/
+}
+
+/*label:định nghĩa nhãn cho thành phần <input/> nó cung cấp một cải thiện cho người sử dụng chuột, nếu click chuột vào nhãn, sẽ đưa con trỏ chuột vào vùng <input /> , cần thiết phải cho giá trị id của <input /> và giá trị for của <label>, hai giá trị này phải trùng nhau.*/
+
+.ratings1 > label:hover:before,  .ratings1 > label:hover ~ label:before,  .ratings1:not(:hover) > :checked ~ label:before { opacity: 1; }
+
+
+
+/** {
+    box-sizing: border-box;
+} Center website .main {
+    max-width: 1000px;
+    margin: auto;
+}*/
+
+
+
+
+
+
+/* Add padding BETWEEN each column */
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows.row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */ 
+
+
+/* LEFT */
+#myBtnContainer {
+	width:100%;
+	}
+#myBtnContainer > ul {
+	list-style-type:none;
+	text-align:center;
+	margin:0;
+	padding:0;
+	}
+#myBtnContainer > ul > li {
+	padding-bottom:40px;
+	min-height:50px;
+	max-height:50px;
+	}
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+#myAtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #999;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myAtn:hover {
+  background-color: #CCC;
+}	

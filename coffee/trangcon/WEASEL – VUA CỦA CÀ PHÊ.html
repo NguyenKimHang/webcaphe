@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WEASEL – VUA CỦA CÀ PHÊ</title>
+<link rel="stylesheet" href="../../REVIEWCOFFEE/css/csscuatrangcon.css" />
+<link rel="shortcut icon" href="../../REVIEWCOFFEE/img/icon/if_2_815205.png" />
+<script>
+function magnify(imgID, zoom) {
+  var img, lens, w, h, bw;
+  img = document.getElementById(imgID);
+
+  lens = document.createElement("DIV");
+  lens.setAttribute("class", "img-magnifier-lens");
+
+  img.parentElement.insertBefore(lens, img);
+  
+  lens.style.backgroundImage = "url('" + img.src + "')";
+  lens.style.backgroundRepeat = "no-repeat";
+  lens.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+  bw = 1;
+  w = lens.offsetWidth / 2;
+  h = lens.offsetHeight / 2;
+
+  lens.addEventListener("mousemove", moveMagnifier);
+  img.addEventListener("mousemove", moveMagnifier);
+
+  lens.addEventListener("touchmove", moveMagnifier);
+  img.addEventListener("touchmove", moveMagnifier);
+  function moveMagnifier(e) {
+    var pos, x, y;
+    e.preventDefault();
+    pos = getCursorPos(e);
+    x = pos.x;
+    y = pos.y;
+    if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+    if (x < w / zoom) {x = w / zoom;}
+    if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+    if (y < h / zoom) {y = h / zoom;}
+    lens.style.left = (x - w) + "px";
+    lens.style.top = (y - h) + "px";
+    lens.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+  }
+
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    a = img.getBoundingClientRect();
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+</script>
+</head>
+<body>
+<div id="headerme">
+	<div class="container">
+        <div class="headleft">
+        	<img class="logoreview" src="../../REVIEWCOFFEE/img/icon/if_2_815205.png" alt="logochinh" />
+            <div class="review">Review coffee</div>
+        </div>
+        <div class="headright">
+        	<div class="headrightme">
+            	<div class="input-group-append">
+                <button class="nutsreach" type="submit">  
+    			<img src="../imgmini/icon/search.png"; alt="search"  class="ui-icon align-text-bottom"/>
+                </button>
+        	</div>
+         	<div class="controls">
+         		<input type="search" id="search" placeholder="Search..." />
+        	</div>
+         </div>	
+        </div>
+    </div>
+</div>
+<div class="container">
+	<div class="Hang">
+    	<div class="left" >
+			<div class="img-magnifier-container">
+  				<img id="myimage" src="../imgmini/logo/weasel-1.png" width="550" height="400" alt="weasel">
+			</div>
+<script>
+magnify("myimage", 2);
+</script>
+		</div>
+    	<div class="right">
+    		<div class="nd">
+				<h1>WEASEL – VUA CỦA CÀ PHÊ</h1>
+    			<h3>
+                	<ul>
+                    	<li>Từ nơi đại ngàn Tây Nguyên hùng vĩ, câu chuyện cà phê Chồn bắt đầu với loài Chồn Hương hoang dã, sống trong những cánh rừng cà phê bạt ngàn… Những “nghệ nhân” này sau khi ăn những trái cà phê chín mọng đã cho ra đời loại cà phê nguyên liệu độc nhất để tạo nên CÀ PHÊ CHỒN WEASEL “vô cùng quý hiếm và đắt nhất thế giới” đến từ Trung Nguyên, với sản lượng hết sức khiêm tốn, chỉ khoảng 40-50 kg mỗi năm.</li>
+       					 <li>Cà phê WEASEL là “cà phê chí tôn chi bảo” – “VUA CỦA CÀ PHÊ”. Nếu WEASEL không có ở đời, “ngai vàng của cà phê đặc chế” sẽ không có được sự trị vì.</li>
+                    <ul></h3>
+			</div>
+        </div>
+	</div>
+</div>
+<div id="footer">
+	<div class="container">
+    	 					<!--FOOTER MEDIUM -->
+         <div class="ft-left">
+        	<h4>giới thiệu</h4>
+        	<p>Website 
+                <a class="tentiemfooter" title="Web phô trương bành chướng thương hiệu cà phê " href="nhap2.html">REVIEW COFFEE</a> các thương hiệu được chọn lọc nước ngoài  
+                <a class="tentiemfooter title="Black Rifle coffee - thương hiệu nước ngoài" href="https://www.blackriflecoffee.com/">Black Rifle Coffee</a>,
+                <a class="tentiemfooter title="Costa Coffee - thương hiệu nước ngoài" href="https://www.costa.co.uk/">Costa Coffee</a>,
+                và các thương hiệu lớn tại Việt Nam 
+                <a class="tentiemfooter title="Highland coffee" href="https://www.highlandscoffee.com.vn/">Highland Coffee</a>,
+                <a class="tentiemfooter title="Trung Nguyên" href="http://www.trungnguyen.com.vn/en/trungnguyenlegendcafe/">Trung Nguyên Coffee</a> được tham khảo và chọn lọc kỹ lưỡng bởi người dùng.
+            </p>
+            <p>
+            	Ủng hộ website bằng cách giới thiệu đến bạn bè.
+            </p>
+        </div>                    
+        <div class="ft-md ">
+        	<h4>Review Coffee</h4>
+        	<p>Liên hệ với chúng tôi:</p>
+            <p>
+            	Địa chỉ: 371 Nguyễn Kiệm, P.3, Q. Gò Vấp, TP-HCM.
+                <br >
+                Điện thoại bàn: (028)38489828
+                <br>
+                Điện thoại khẩn cấp: 19006886
+            </p>
+            <p> <!--mail ảo nha :) -->
+            	Email:
+                	<a href="mailto:support@review.com">support@review.com</a>
+            </p>
+        </div>     				
+        	<!--FOOTER RIGHT -->
+        <div class="ft-right">
+            <h4>Follow Us:</h4>
+            <ul class="lienketme">
+            	<li><a class="iconlienket" href="#"><img src="../imgmini/icon/06-facebook-512.png" alt="fblogo" /></a>
+                Facebook
+                </li>
+            	<li><a class="iconlienket" href="#"><img src="../imgmini/icon/tải xuống.png" alt="insta" /></a>
+                Instagram
+                </li>
+              	<li><a class="iconlienket" href="#"><img src="../imgmini/icon/50591-twitter-bird-shape-icon-vector-icon-vector-eps.png" alt="twi" /></a>
+                Twitter
+                </li>
+            </ul>
+           
+        </div>
+          <div class="author">
+    	<h4>Author</h4>
+		<ul class="3cogai">
+        	<li class="3cogai">Kim Hằng</li>
+            <li class="3cogai">Kim Thanh</li>
+            <li class="3cogai">Cẩm Tú</li>
+        </ul>
+    </div>
+    </div>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HIGHLAND'S</title>
+<link href="css/htmlvabody.css" rel="stylesheet" />
+<link href="css/slideshow.css" rel="stylesheet" />
+<link href="css/body2.css" rel="stylesheet" />
+<link href="css/starrangting.css" rel="stylesheet" />
+<link rel="shortcut icon" href="img/icon/if_2_815205.png"/>
+</head>
+
+<body>
+<div><button onclick="topFunction()" id="myAtn" title="Go to top">Top</button></div>
+<div class="headerme">
+	<div class="container">
+    	<div class="headleft">
+        	<img class="logoreview" src="img/icon/if_2_815205.png" alt="logochinh" />
+            <div class="review">Review coffee</div>
+        </div>
+        <div class="headright">
+        	<div class="headrightme">
+            	<div class="input-group-append">
+                <button class="nutsreach" type="submit">  
+    			<img src="img/icon/search.png"; alt="search"  class="ui-icon align-text-bottom"/>
+                </button>
+        	</div>
+         	<div class="controls">
+         		<input type="search" id="search" placeholder="Search..." />
+        	</div>
+        </div>
+    </div>
+</div>  
+<div class="mainmenu">
+	<div class="container">
+    	<ul class="sky-mega-menu scale-effect">
+
+        	<li><a href="trangdau.html">TRANG CHỦ</a></li>
+            <li><a href="#">MENU</a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="trungnguyencoffee.html">TRUNG NGUYEN</a></li>
+                        <li><a href="starbuckscoffee.html">STARBUCKS</a>
+                        <li><a href="highlandcoffee.html">HIGHLANDS</a></li>
+                        <li><a href="blackrifecoffee.html">BLACK RIFLE</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!--/ about -->
+        
+            <!-- news -->
+            <li><a href="blackrifecoffee.html">News</a></li>
+		</ul>
+    </div>
+</div>
+
+<div class="container">
+	<div class="header2">
+            <div class="slideshow">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="img/logo/banner.jpg" style="width:100%">
+                  <div class="text">Đẳng Cấp Cùng Trung Nguyên Cà Phê</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="img/logo/Black-Rifle-Coffee.jpg" style="width:100%">
+                  <div class="text">Black Rifle Lựa Chọn Sáng Suốt Cho Buổi Sáng</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="img/logo/highlands-6456c-1480166694778.jpg" style="width:100%">
+                  <div class="text">Đậm Đà Cùng HighLands</div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="img/logo/6906921-starbucks-coffee.jpg" style="width:100%">
+                  <div class="text">Starbucks Đỉnh Cao Của Sự Thưởng Thức</div>
+                </div>
+
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+
+
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active1", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active1";
+				}
+            </script>
+    </div>
+</div>
+
+<div class="main-content">
+	<div class="content">
+    	<div class="container">	
+            <div class="body2">
+                <div class="left">
+                	<div id="myBtnContainer">
+                    		<ul>
+                            	<li><button class="btn active" onclick="filterSelection('all')"> Show all</button></li>
+                                <li><button class="btn" onclick="filterSelection('nature')">Tự Nhiên</button></li>
+                                <li><button class="btn" onclick="filterSelection('cars')">Mạnh</button></li>
+                                <li><button class="btn" onclick="filterSelection('people')"> Nhẹ</button></li>
+                            </ul>
+                    </div>
+                		
+                </div>
+                <div class="right">
+                	<div class="row1">
+                    	<div class="column nature">
+                        	<div class="conitem">
+                            	<div class="imgvaten">
+                                	<img src="img/logo/AMERICANO.png" alt="hinh1"/>
+                                	<div class="ten"><a href="trangcon/Americano.html">AMERICANO</a></div>
+                                </div>
+                                <div class="ratingss1">
+                                	<span class="ratings1">
+                                      <input id="rating5" type="radio" name="rating" value="5">
+                                      <label for="rating5">5</label>
+                                      <input id="rating4" type="radio" name="rating" value="4">
+                                      <label for="rating4">4</label>
+                                      <input id="rating3" type="radio" name="rating" value="3">
+                                      <label for="rating3">3</label>
+                                      <input id="rating2" type="radio" name="rating" value="2" checked>
+                                      <label for="rating2">2</label>
+                                      <input id="rating1" type="radio" name="rating" value="1">
+                                      <label for="rating1">1</label>
+									</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column nature">
+                        	<div class="conitem">
+                            	<div class="imgvaten">
+                                	<img src="img/logo/CAPPUCINO.png" alt="SS2" />
+                            <div class="ten"><a href="trangcon/Cappucino.html">CAPPUCCINO</a></div>
+                                </div>
+                                <div class="ratingss1">
+                                	<span class="ratings1">
+                                      <input id="rating10" type="radio" name="rating" value="5">
+                                      <label for="rating10">5</label>
+                                      <input id="rating9" type="radio" name="rating" value="4">
+                                      <label for="rating9">4</label>
+                                      <input id="rating8" type="radio" name="rating" value="3">
+                                      <label for="rating8">3</label>
+                                      <input id="rating7" type="radio" name="rating" value="2" checked>
+                                      <label for="rating7">2</label>
+                                      <input id="rating6" type="radio" name="rating" value="1">
+                                      <label for="rating6">1</label>
+									</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column nature">
+                        	<div class="conitem">
+                            	<div class="imgvaten">
+                                	<img src="img/logo/CARAMEL-MACCHIATO.png" alt="AK3" />
+                            <div class="ten"><a href="trangcon/Caramelmacchiato.html">CARAMEL MACCHIATO</a></div>
+                                </div>
+                                <div class="ratingss1">
+                                	<span class="ratings1">
+                                      <input id="rating15" type="radio" name="rating" value="5">
+                                      <label for="rating15">5</label>
+                                      <input id="rating14" type="radio" name="rating" value="4">
+                                      <label for="rating14">4</label>
+                                      <input id="rating13" type="radio" name="rating" value="3">
+                                      <label for="rating13">3</label>
+                                      <input id="rating12" type="radio" name="rating" value="2" checked>
+                                      <label for="rating12">2</label>
+                                      <input id="rating11" type="radio" name="rating" value="1">
+                                      <label for="rating11">1</label>
+									</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row2">
+                    	<div class="column cars">
+                        	<div class="conitem">
+                            	<div class="imgvaten">
+                                	<img src="img/logo/ESPRESSO.png" alt="Blackrifle4" />
+                                	<div class="ten"><a href="trangcon/Espresso.html">ESPRESSO</a></div>
+                                </div>
+                                <div class="rating">
+                                	<span class="ratings1">
+                                      <input id="rating20" type="radio" name="rating" value="5">
+                                      <label for="rating20">5</label>
+                                      <input id="rating19" type="radio" name="rating" value="4">
+                                      <label for="rating19">4</label>
+                                      <input id="rating18" type="radio" name="rating" value="3">
+                                      <label for="rating18">3</label>
+                                      <input id="rating17" type="radio" name="rating" value="2" checked>
+                                      <label for="rating17">2</label>
+                                      <input id="rating16" type="radio" name="rating" value="1">
+                                      <label for="rating16">1</label>
+									</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column people">
+                        	<div class="conitem">
+                            	<div class="imgvaten">
+                                	<img src="img/logo/LATTE.png" alt="BB6" />
+                                <div class="ten"><a href="trangcon/Latte.html">LATTE</a></div>
+                                </div>
+                                <div class="rating">
+                                	<span class="ratings1">
+                                      <input id="rating25" type="radio" name="rating" value="5">
+                                      <label for="rating25">5</label>
+                                      <input id="rating24" type="radio" name="rating" value="4">
+                                      <label for="rating24">4</label>
+                                      <input id="rating23" type="radio" name="rating" value="3">
+                                      <label for="rating23">3</label>
+                                      <input id="rating22" type="radio" name="rating" value="2" checked>
+                                      <label for="rating22">2</label>
+                                      <input id="rating21" type="radio" name="rating" value="1">
+                                      <label for="rating21">1</label>
+									</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column people">
+                        	<div class="conitem">
+                            	<div class="imgvaten">
+                                	<img src="img/logo/MOCHA.png" />
+                                <div class="ten"><a href="trangcon/Mocha.html">MOCHA MACCHIATO</a></div>
+                                </div>
+                                <div class="rating">
+                                	<span class="ratings1">
+                                      <input id="rating30" type="radio" name="rating" value="5">
+                                      <label for="rating30">5</label>
+                                      <input id="rating29" type="radio" name="rating" value="4">
+                                      <label for="rating29">4</label>
+                                      <input id="rating28" type="radio" name="rating" value="3">
+                                      <label for="rating28">3</label>
+                                      <input id="rating27" type="radio" name="rating" value="2" checked>
+                                      <label for="rating27">2</label>
+                                      <input id="rating26" type="radio" name="rating" value="1">
+                                      <label for="rating26">1</label>
+									</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+				<script>
+					filterSelection("all")
+					function filterSelection(c) {
+					  var x, i;
+					  x = document.getElementsByClassName("column");
+					  if (c == "all") c = "";
+					  for (i = 0; i < x.length; i++) {
+						w3RemoveClass(x[i], "show");
+						if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+					  }
+					}
+					
+					function w3AddClass(element, name) {
+					  var i, arr1, arr2;
+					  arr1 = element.className.split(" ");
+					  arr2 = name.split(" ");
+					  for (i = 0; i < arr2.length; i++) {
+						if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+					  }
+					}
+					
+					function w3RemoveClass(element, name) {
+					  var i, arr1, arr2;
+					  arr1 = element.className.split(" ");
+					  arr2 = name.split(" ");
+					  for (i = 0; i < arr2.length; i++) {
+						while (arr1.indexOf(arr2[i]) > -1) {
+						  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+						}
+					  }
+					  element.className = arr1.join(" ");
+					}
+					
+					
+					// Add active class to the current button (highlight it)
+					var btnContainer = document.getElementById("myBtnContainer");
+					var btns = btnContainer.getElementsByClassName("btn");
+					for (var i = 0; i < btns.length; i++) {
+					  btns[i].addEventListener("click", function(){
+						var current = document.getElementsByClassName("active");
+						current[0].className = current[0].className.replace(" active", "");
+						this.className += " active";
+					  });
+					}
+				</script>
+            </div>   
+        </div>  
+    </div>
+</div>
+<div class="footer">
+	<div class="confooter">
+    	<div class="container">
+    	 					<!--FOOTER MEDIUM -->
+             <div class="ft-left">
+                <h4>giới thiệu</h4>
+                <p>Website 
+                    <a class="tentiemfooter" title="Web phô trương bành chướng thương hiệu cà phê " href="nhap2.html">REVIEW COFFEE</a> các thương hiệu được chọn lọc nước ngoài  
+                    <a class="tentiemfooter title="Black Rifle coffee - thương hiệu nước ngoài" href="https://www.blackriflecoffee.com/">Black Rifle Coffee</a>,
+                    <a class="tentiemfooter title="Costa Coffee - thương hiệu nước ngoài" href="https://www.costa.co.uk/">Costa Coffee</a>,
+                    và các thương hiệu lớn tại Việt Nam 
+                    <a class="tentiemfooter title="Highland coffee" href="https://www.highlandscoffee.com.vn/">Highland Coffee</a>,
+                    <a class="tentiemfooter title="Trung Nguyên" href="http://www.trungnguyen.com.vn/en/trungnguyenlegendcafe/">Trung Nguyên Coffee</a> được tham khảo và chọn lọc kỹ lưỡng bởi người dùng.
+                </p>
+                <p>
+                    Ủng hộ website bằng cách giới thiệu đến bạn bè.
+                </p>
+            </div>                    
+            <div class="ft-md ">
+                <h4>Review Coffee</h4>
+                <p>Liên hệ với chúng tôi:</p>
+                <p>
+                    Địa chỉ: 371 Nguyễn Kiệm, P.3, Q. Gò Vấp, TP-HCM.
+                    <br >
+                    Điện thoại bàn: (028)38489828
+                    <br>
+                    Điện thoại khẩn cấp: 19006886
+                </p>
+                <p> <!--mail ảo nha :) -->
+                    Email:
+                        <a href="mailto:support@review.com">support@review.com</a>
+                </p>
+            </div>     				
+                <!--FOOTER RIGHT -->
+            <div class="ft-right">
+                <h4>Follow Us:</h4>
+                <ul class="lienketme">
+                    <li><a class="iconlienket" href="#"><img src="img/icon/06-facebook-512.png" alt="fblogo" /></a>
+                    Facebook
+                    </li>
+                    <li><a class="iconlienket" href="#"><img src="img/icon/tải xuống.png" alt="insta" /></a>
+                    Instagram
+                    </li>
+                    <li><a class="iconlienket" href="#"><img src="img/icon/50591-twitter-bird-shape-icon-vector-icon-vector-eps.png" alt="twi" /></a>
+                    Twitter
+                    </li>
+                </ul> 
+            </div>
+    	</div>
+	</div>
+</div>
+	
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myAtn").style.display = "block";
+    } else {
+        document.getElementById("myAtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

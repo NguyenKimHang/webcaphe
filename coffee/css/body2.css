@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*BODY LEFT*/
+div.body2 > div {
+	float:left;
+}
+
+div.left {
+	width:40%;
+	}
+.main-menu {
+    clear: both;
+	margin:0;
+}
+.main-content {
+	margin:0;
+	padding:0;
+	}
+#myBtnContainer >  ul {
+	padding:0;
+	margin:0;
+	}
+#myBtnContainer >  ul > li {
+	list-style-type:none;
+	}
+
+
+
+/*MENU2*/
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  width:100%;
+}
+
+.btn:hover {
+  background-color: #ddd;
+  width:100%;
+}
+
+.btn.active {
+  background-color: #2D3E50;
+  color: white;
+  width:100%;
+}
+/*Body right*/
+/*BODY RIGHT*/
+div.right {
+	width:60%;
+	text-align:center;
+	}
+div.row1, div.row2 {
+	width:100%;
+	float:left;
+	padding-bottom:60px;
+	}
+div.row1black, div.row2black {
+	width:100%;
+	float:left;
+	padding-bottom:140px;
+	}
+.column {
+	width:30%;
+	margin:0;
+	height:200px;
+	float:left;
+	margin-bottom:10px;
+	content:70%;
+	}
+.conitem {
+	width:100%;
+	margin:0;
+	}
+.imgvaten {
+	width: 100%;
+    margin: 0;
+	}
+.conitem > .imgvaten > img {
+	width: 70%;
+	height:80%;
+	text-align:center;
+    transition: transform .5s;
+
+	}
+
+
+
+.ten{
+	height:20px;
+	overflow:auto;
+	
+	}
+.conitem > .imgvaten > .ten > a {
+	max-height:45px;
+	text-decoration:none;
+	color:#000;
+	width:30%;
+	}
+div.conitem > div.imgvaten > img:hover {
+	transform:scale(1.1);
+	background-color:#CCC;
+	border:1px solid #999;
+	}
+div.conitem > div.imgvaten > div.ten > a {
+	text-align:center;
+	margin:0;
+	}
+
